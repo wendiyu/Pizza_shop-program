@@ -1,0 +1,56 @@
+#
+#Created by: Wendi Yu
+#Created on: Mar 2018
+#
+#Calculate the cost of pizza
+
+sizeOfPizza = input("What size of pizza would you like,Large or Extra Large? Size of pizza = ")
+
+
+toppingOfPizza = float(input("What kind of topping would you like to have?(number 1 to 4) Topping = "))
+
+
+if (sizeOfPizza == "Extra Large") and (toppingOfPizza <= 3):
+  
+	subtotal1 = 10.0+(0.25+(toppingOfPizza*0.75))
+  
+	Tax1 = 0.13*(subtotal1)
+  
+	Total1 = subtotal1 + Tax1
+  
+	print("Subtotal:$   " + str(round(subtotal1,2)), "Tax:$ " + str(round(Tax1,2)), "Total:$ " + str(round(Total1,2)))
+
+elif (sizeOfPizza == "Extra Large") and (toppingOfPizza == 4):
+  
+	subtotal1 = 13.35 
+  Tax1 = 0.13*(subtotal1)
+ 
+	Total1 = subtotal1 + Tax1
+  
+	print("Subtotal:$   " + str(round(subtotal1,2)), "Tax:$ " + str(round(Tax1,2)), "Total:$ " + str(round(Total1,2))
+)  
+
+elif (sizeOfPizza == "Large") and (toppingOfPizza <= 3):
+  
+	subtotal1 = 6.0+(0.25+(toppingOfPizza*0.75))
+  
+	Tax1 = 0.13*(subtotal1)
+  
+	Total1 = subtotal1 + Tax1
+  
+	print("Subtotal:$   " + str(round(subtotal1,2)), "Tax:$ " + str(round(Tax1,2)), "Total:$ " + str(round(Total1,2)))
+
+else: 
+  
+	subtotal1 = 9.35
+  
+	Tax1 = 0.13*(subtotal1)
+  
+	Total1 = subtotal1 + Tax1
+  
+	print("Subtotal:$  " + str(round(subtotal1,2)), "Tax:$ " + str(round(Tax1,2)), "Total:$ " + str(round(Total1,2)))
+
+
+
+
+input()
